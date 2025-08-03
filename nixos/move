@@ -1,0 +1,8 @@
+#! /usr/bin/env bash
+
+file_ext=*.nix
+modules=modules
+target=/etc/nixos/
+
+cp $file_ext $target -urf
+cp $modules/$file_ext $target/$modules -urf
